@@ -1,0 +1,113 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "items": {
+        "__TYPE__": "GroupContentType",
+        "value": [
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "project",
+                {
+                  "__TYPE__": "LinkContent",
+                  "value": {
+                    "__TYPE__": "DocumentLink",
+                    "id": "mock_document_id"
+                  }
+                }
+              ],
+              [
+                "bypass_video",
+                {
+                  "__TYPE__": "FieldContent",
+                  "value": "certainly",
+                  "type": "Text"
+                }
+              ],
+              [
+                "project_video",
+                {
+                  "__TYPE__": "FieldContent",
+                  "value": "alternative",
+                  "type": "Select"
+                }
+              ],
+              [
+                "bypass_video_label_name",
+                {
+                  "__TYPE__": "FieldContent",
+                  "value": "basket",
+                  "type": "Text"
+                }
+              ],
+              [
+                "bypass_video_label_tag",
+                {
+                  "__TYPE__": "FieldContent",
+                  "value": "reach",
+                  "type": "Text"
+                }
+              ],
+              [
+                "bypass_video_slogan",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "heading2",
+                      "content": {
+                        "text": "Sleep"
+                      }
+                    }
+                  ]
+                }
+              ],
+              [
+                "autoplay",
+                {
+                  "__TYPE__": "BooleanContent",
+                  "value": false
+                }
+              ],
+              [
+                "timestamp_start",
+                {
+                  "__TYPE__": "FieldContent",
+                  "value": "92",
+                  "type": "Number"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "slogan": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Minim cillum nisi labore pariatur est ipsum."
+            }
+          }
+        ]
+      },
+      "link": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      "link_label": {
+        "__TYPE__": "FieldContent",
+        "value": "huge",
+        "type": "Text"
+      }
+    },
+    "items": []
+  }
+]

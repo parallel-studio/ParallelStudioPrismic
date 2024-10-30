@@ -1,0 +1,12 @@
+@use "@/styles/_media.scss" as media;
+
+.header {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+@include media.medium {
+}
+
+@include media.small {
+}

@@ -1,0 +1,153 @@
+@use "@/styles/_media.scss" as media;
+
+.mega {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--px-small);
+  block-size: calc(100svh - media.$headersize - var(--px-small));
+
+  h2 {
+    margin: 0;
+    margin-block-start: max(var(--px-medium));
+    max-inline-size: 75svw;
+    font-size: min(3rem, 5svh);
+  }
+
+  img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+}
+
+$endsize: 300px;
+
+.end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  inline-size: $endsize;
+  block-size: 100%;
+  font-weight: 500;
+  font-size: 1.65rem;
+  text-transform: uppercase;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.placeholder {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.info {
+  margin-block-end: var(--px-small);
+}
+
+$gap: calc(var(--px-small) / 6);
+$endsize: 300px;
+
+.carousel {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  block-size: 50svh;
+  overflow: hidden;
+}
+
+.carousel_wrapper {
+  display: flex;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  block-size: 100%;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.item {
+  flex-shrink: 0;
+  z-index: 1;
+  margin: 0;
+  block-size: 100%;
+  overflow: hidden;
+  list-style: none;
+
+  &:not(:last-child, :nth-last-of-type(2)) {
+    background-color: white;
+    padding-inline-end: $gap;
+  }
+
+  &:not(:last-child) {
+    z-index: 1;
+  }
+
+  &:last-of-type {
+    background-color: transparent;
+    inline-size: 300px;
+  }
+
+  a,
+  > div {
+    inline-size: 100%;
+    block-size: 100%;
+  }
+
+  video,
+  .video {
+    background-color: black;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+}
+
+.popup {
+  mux-player {
+    --live-button: none;
+    --seek-backward-button: none;
+    --seek-forward-button: none;
+    --captions-button: none;
+    --airplay-button: none;
+    --pip-button: none;
+    --cast-button: none;
+    --playback-rate-button: none;
+    --time-display: none;
+    --duration-display: none;
+    --media-object-fit: contain;
+
+    ::part(center play button pre-play) {
+      --media-control-background: transparent;
+      --media-range-bar-color: transparent;
+    }
+
+    // ::part(controller) {
+    //   --media-control-background: transparent;
+    //   --media-range-bar-color: transparent;
+    // }
+  }
+}
+
+.full_screen_video {
+  background-color: transparent;
+  padding: var(--px-small);
+  width: auto;
+  height: 90svh;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

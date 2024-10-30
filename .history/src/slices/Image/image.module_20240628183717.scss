@@ -1,0 +1,11 @@
+@use "@/styles/_media.scss" as media;
+
+.gallery {
+  margin-block-end: var(--px-small);
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

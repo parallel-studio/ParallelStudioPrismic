@@ -1,0 +1,222 @@
+{
+  "format": "page",
+  "id": "project",
+  "label": "Project",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "client": {
+        "type": "Link",
+        "config": {
+          "label": "Client",
+          "select": "document",
+          "customtypes": ["client"]
+        }
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "Description",
+          "placeholder": ""
+        }
+      },
+      "categories": {
+        "type": "Group",
+        "config": {
+          "label": "Categories",
+          "repeat": true,
+          "fields": {
+            "category": {
+              "type": "Link",
+              "config": {
+                "label": "Category",
+                "select": "document",
+                "customtypes": ["category"]
+              }
+            }
+          }
+        }
+      },
+      "color": {
+        "type": "Color",
+        "config": {
+          "label": "Color",
+          "placeholder": ""
+        }
+      },
+      "hero_format": {
+        "type": "Select",
+        "config": {
+          "label": "Hero Format",
+          "placeholder": "The hero will display the default video",
+          "options": ["landscape", "portrait"],
+          "default_value": "landscape"
+        }
+      },
+      "video_full": {
+        "type": "Text",
+        "config": {
+          "label": "Video Long",
+          "placeholder": "This video will be displayed on the project page"
+        }
+      },
+      "placeholder_timestamp": {
+        "type": "Number",
+        "config": {
+          "label": "Placeholder Timestamp",
+          "placeholder": "Adjust the placeholder displayed on the project page (time in seconds)"
+        }
+      },
+      "video": {
+        "type": "Text",
+        "config": {
+          "label": "Video Short - Default",
+          "placeholder": "Default video used on galleries playing on hover"
+        }
+      },
+      "video_alternative": {
+        "type": "Text",
+        "config": {
+          "label": "Video Short - Alternative",
+          "placeholder": "Alternative video used on galleries playing on hover"
+        }
+      },
+      "credits": {
+        "type": "Group",
+        "config": {
+          "label": "Credits",
+          "repeat": true,
+          "fields": {
+            "title": {
+              "type": "Text",
+              "config": {
+                "label": "Title",
+                "placeholder": ""
+              }
+            },
+            "name": {
+              "type": "Text",
+              "config": {
+                "label": "Name",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "spacer": {
+              "type": "SharedSlice"
+            },
+            "video": {
+              "type": "SharedSlice"
+            },
+            "text_with_image": {
+              "type": "SharedSlice"
+            },
+            "image": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
+      },
+      "meta_description": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        },
+        "type": "Text"
+      },
+      "meta_image": {
+        "config": {
+          "constraint": {
+            "height": 1260,
+            "width": 2400
+          },
+          "label": "Meta Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "meta_robots": {
+        "type": "Select",
+        "config": {
+          "label": "Meta Robots",
+          "placeholder": "all",
+          "options": ["none", "noindex", "nofollow"]
+        }
+      },
+      "sitemap": {
+        "type": "Boolean",
+        "config": {
+          "label": "Include in Sitemap",
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": true
+        }
+      }
+    },
+    "Config": {
+      "footer": {
+        "type": "Group",
+        "config": {
+          "label": "Footer",
+          "repeat": false,
+          "fields": {
+            "show_back_to_link": {
+              "type": "Boolean",
+              "config": {
+                "label": "Show \"Back To\" Link",
+                "placeholder_false": "false",
+                "placeholder_true": "true",
+                "default_value": true
+              }
+            },
+            "link_back_label": {
+              "type": "Text",
+              "config": {
+                "label": "Link Back Label",
+                "placeholder": "If left blank, will revert to the value specified under \"Settings\" for label and link"
+              }
+            },
+            "link_back": {
+              "type": "Link",
+              "config": {
+                "label": "Link Back",
+                "select": "document",
+                "customtypes": ["page", "project"]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

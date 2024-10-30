@@ -1,0 +1,16 @@
+@use "@/styles/_media.scss" as media;
+
+.small {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(250px, 5svw), 1fr));
+  gap: var(--px-medium);
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .small {
+    gap: var(--px-small);
+  }
+}

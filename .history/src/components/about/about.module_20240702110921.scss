@@ -1,0 +1,11 @@
+@use "@/styles/_media.scss" as media;
+
+.text {
+  max-inline-size: 60ch;
+  margin-inline-end: var(--px-medium);
+}
+@include media.medium {
+}
+
+@include media.small {
+}

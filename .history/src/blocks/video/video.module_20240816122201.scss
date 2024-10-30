@@ -1,0 +1,16 @@
+@use "@/styles/_media.scss" as media;
+
+.container {
+  block-size: max(calc(var(--block-height-base) * 1.5), 75svh);
+  inline-size: 100%;
+  margin-inline: auto;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .container {
+    block-size: var(--block-height-base);
+  }
+}

@@ -1,0 +1,25 @@
+@use "@/styles/_media.scss" as media;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  min-block-size: max(350px, 15svw);
+
+  > * {
+    max-inline-size: 75ch;
+  }
+}
+
+.fullscreen {
+  min-block-size: calc(100svh - media.$headersize);
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

@@ -1,0 +1,29 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  position: fixed;
+  bottom: 0;
+  // transform: translate3d(0, 50%, 0);
+  margin-inline-start: calc(-1 * var(--px-medium));
+  background-color: var(--primary-color);
+  padding: var(--px-medium);
+  inline-size: calc(100svw + var(--px-medium));
+  // min-block-size: 25svh;
+  color: var(--theme-dark-secondary-color);
+}
+
+.right {
+  inline-size: 100%;
+  font-size: 1rem;
+  line-height: 1.15;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .wrapper {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+}

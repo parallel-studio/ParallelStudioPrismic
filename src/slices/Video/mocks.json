@@ -1,0 +1,19 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "playback_id": {
+        "__TYPE__": "FieldContent",
+        "value": "famous",
+        "type": "Text"
+      },
+      "placeholder_timestamp": {
+        "__TYPE__": "FieldContent",
+        "value": "18",
+        "type": "Number"
+      }
+    },
+    "items": []
+  }
+]

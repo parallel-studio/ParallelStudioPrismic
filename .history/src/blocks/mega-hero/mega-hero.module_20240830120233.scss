@@ -1,0 +1,262 @@
+@use "@/styles/_media.scss" as media;
+
+.mega {
+  display: flex;
+  // position: fixed;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--px-small);
+  block-size: calc(100svh - media.$headersize - var(--px-small));
+
+  img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+}
+
+.header {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  block-size: 100%;
+  gap: var(--px-tiny);
+
+  h2 {
+    margin: 0;
+    margin-block-start: max(var(--px-medium));
+    max-block-size: 15svh;
+    max-inline-size: 75svw;
+    font-size: min(3rem, 5svh);
+    text-wrap: pretty;
+  }
+}
+
+@include media.horizontal_large_vertical_small(300) {
+  .header {
+    h2 {
+      margin-block-start: 0;
+      max-inline-size: 100%;
+    }
+  }
+}
+
+$endsize: max(300px, 25svw);
+
+.carousel {
+  display: flex;
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  inline-size: calc(100svw - 2 * var(--px-small));
+  block-size: 50svh;
+  overflow: hidden;
+}
+
+.carousel_wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  background-color: white;
+  padding: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+
+  // inline-size: fit-content;
+  // overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.scroll {
+  inline-size: fit-content;
+  overflow-x: scroll;
+}
+
+.placeholder {
+  position: absolute;
+  div {
+    block-size: 2.5rem;
+  }
+}
+
+.fake {
+  display: none;
+}
+
+.placeholder,
+.fake {
+  display: flex;
+  top: 0;
+  right: 0;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  inline-size: $endsize;
+  block-size: 100%;
+  font-weight: 500;
+  font-size: 1.65rem;
+  text-transform: uppercase;
+}
+
+.item {
+  position: relative;
+  flex-shrink: 0;
+  will-change: transform;
+  cursor: pointer;
+  background-color: white;
+  padding-inline-end: var(--gallery-gap);
+  inline-size: fit-content;
+  block-size: 100%;
+  overflow: hidden;
+  color: white;
+  list-style: none;
+  z-index: 2;
+
+  button {
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    will-change: transform;
+  }
+}
+
+.thumbnail_container {
+  will-change: transform;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.thumbnail_title {
+  $padding: var(--px-small);
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 1;
+  padding: calc(var(--px-small) * 0.75) var(--px-small);
+  inline-size: 100%;
+  block-size: 100%;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.2;
+
+  svg {
+    position: relative;
+    top: -0.04em;
+    margin-inline-start: 0.3em;
+    width: 0.65em;
+    height: 0.65em;
+  }
+}
+
+.video {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+
+  video {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+}
+
+.full_screen_video {
+  transition: all 0.3s ease;
+  background-color: transparent;
+  width: auto;
+  height: 90svh;
+}
+
+@mixin mobile_version {
+  position: relative;
+
+  .header {
+    justify-content: flex-end;
+
+    h2 {
+      max-inline-size: none;
+      line-break: loose;
+    }
+
+    .info {
+      margin-block-start: var(--px-small);
+    }
+  }
+
+  .carousel_wrapper {
+    z-index: 1;
+    background-color: transparent;
+  }
+
+  .placeholder {
+    position: relative;
+
+    > div {
+      display: none;
+    }
+  }
+
+  .fake {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+
+    div {
+      display: block;
+    }
+  }
+
+  .placeholder,
+  .fake {
+    z-index: 0;
+    inline-size: min(calc(75svw - var(--px-small) * 2), 350px);
+  }
+
+  .item {
+    img {
+      block-size: calc(100% + 2px);
+    }
+  }
+
+  .full_screen_video {
+    width: 100%;
+  }
+
+  .darken {
+    img,
+    video {
+      filter: brightness(0.9);
+    }
+  }
+}
+
+.mobile_version {
+  @include mobile_version;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .mega {
+    @include mobile_version;
+  }
+
+  .item {
+    inline-size: calc(100svw - var(--px-small) * 4) !important;
+  }
+}

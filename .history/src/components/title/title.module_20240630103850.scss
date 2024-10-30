@@ -1,0 +1,18 @@
+@use "@/styles/_media.scss" as media;
+
+@include media.medium {
+}
+
+@include media.small {
+  .wrapper {
+    flex-direction: column;
+    block-size: auto;
+    padding-block-end: var(--px-small);
+    min-block-size: calc(100svh - media.$headersize);
+    justify-content: flex-start;
+
+    h1 {
+      margin-block-start: 0;
+    }
+  }
+}

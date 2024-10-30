@@ -1,0 +1,23 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: flex;
+}
+
+.double_column {
+  flex: 2;
+
+  :nth-child(1) {
+    inline-size: 50%;
+  }
+
+  :nth-child(2) {
+    inline-size: 50%;
+  }
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

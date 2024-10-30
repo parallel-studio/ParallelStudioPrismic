@@ -1,0 +1,12 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: var(--px-small);
+}
+@include media.medium {
+}
+
+@include media.small {
+}

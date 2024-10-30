@@ -1,0 +1,17 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  margin-top: calc(25svh - media.$headersize);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .wrapper {
+    margin-top: calc(20svh - media.$headersize);
+  }
+}

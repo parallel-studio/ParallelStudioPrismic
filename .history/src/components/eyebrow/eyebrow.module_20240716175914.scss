@@ -1,0 +1,19 @@
+@use "@/styles/_media.scss" as media;
+
+.links_title {
+  font-size: x-small;
+}
+
+.dark {
+  color: var(--theme-dark-secondary-color);
+}
+
+.light {
+  color: var(--theme-light-secondary-color);
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

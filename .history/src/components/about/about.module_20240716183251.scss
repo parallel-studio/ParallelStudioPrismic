@@ -1,0 +1,37 @@
+@use "@/styles/_media.scss" as media;
+
+.text {
+  max-inline-size: 60ch;
+  margin-inline-end: var(--px-medium);
+}
+
+.contacts {
+  display: grid;
+  margin-block-start: var(--px-big);
+  inline-size: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(min-content, 1fr));
+  gap: var(--px-medium);
+}
+
+.big_link {
+  margin-block-start: var(--px-small);
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .wrapper {
+    margin-block-start: calc(1.25 * var(--px-big) - media.$headersize);
+  }
+
+  .text {
+    inline-size: 100%;
+    max-inline-size: none;
+    margin-inline-end: auto;
+  }
+
+  .container {
+    gap: var(--px-big);
+  }
+}

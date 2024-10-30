@@ -1,0 +1,138 @@
+@use "@/styles/_media.scss" as media;
+
+$film: var(--gallery-gap);
+$small: var(--px-small);
+$medium: var(--px-medium);
+
+.small {
+  margin-block-end: $small;
+
+  .container {
+    > *:not(:last-child) {
+      padding-inline-end: $small;
+    }
+  }
+}
+
+.medium {
+  margin-block-end: $medium;
+
+  .container {
+    > *:not(:last-child) {
+      padding-inline-end: $small;
+    }
+  }
+}
+
+.film {
+  margin-block-end: $medium;
+
+  .container {
+    > *:not(:last-child) {
+      padding-inline-end: $film;
+    }
+  }
+}
+
+.small,
+.medium,
+.film {
+  &:last-child {
+    margin-block-end: 0;
+  }
+}
+
+.container {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  > *:not(:last-child) {
+    background-color: white;
+  }
+}
+
+.block_default {
+  > * > * {
+    block-size: max(325px, 20svw);
+  }
+}
+
+.block_auto {
+  > * > * {
+    block-size: 100%;
+  }
+}
+
+.default {
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+}
+
+.one_two {
+  grid-template-columns: 1fr 2fr;
+}
+
+.two_one {
+  grid-template-columns: 2fr 1fr;
+}
+
+.big_small_big {
+  grid-template-columns: 1fr 0.75fr 1fr;
+}
+
+.small_big_small {
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+}
+
+.three_to_one {
+  grid-template-columns: 3fr 1fr;
+}
+
+.one_to_three {
+  grid-template-columns: 1fr 3fr;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .small_big_small,
+  .three_to_one,
+  .one_to_three,
+  .default,
+  .one_two,
+  .two_one,
+  .big_small_big {
+    grid-template-columns: 1fr;
+  }
+
+  .default {
+    grid-auto-flow: row;
+  }
+
+  .small,
+  .medium {
+    .container {
+      gap: var(--px-small);
+    }
+  }
+
+  .film {
+    .container {
+      gap: var(--px-medium);
+    }
+  }
+
+  .small,
+  .medium,
+  .film {
+    margin-block-end: 0;
+
+    .container {
+      > *:not(:last-child) {
+        padding-inline-end: 0;
+      }
+    }
+  }
+}

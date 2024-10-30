@@ -1,0 +1,48 @@
+@use "@/styles/_media.scss" as media;
+
+.carousel_item {
+  flex-shrink: 0;
+  z-index: 1;
+  block-size: 100%;
+
+  &:last-of-type {
+    margin-right: calc($endsize + $gap);
+  }
+
+  video {
+    block-size: 100%;
+    inline-size: 100%;
+    object-fit: cover;
+  }
+}
+
+.h {
+  background-color: red;
+  aspect-ratio: 16 / 10;
+}
+
+.v {
+  background-color: blue;
+  aspect-ratio: 12 / 16;
+}
+
+.end {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  inline-size: $endsize;
+  block-size: 100%;
+  font-weight: 500;
+  font-size: 1.65rem;
+  text-transform: uppercase;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

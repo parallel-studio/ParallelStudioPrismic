@@ -1,0 +1,37 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: flex;
+}
+
+.double_column {
+  > :nth-child(1) {
+    inline-size: 50%;
+  }
+}
+
+.screen_height {
+  min-block-size: 80svh;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .wrapper {
+    flex-direction: column;
+    gap: var(--px-small);
+  }
+
+  .screen_height {
+    min-block-size: auto;
+  }
+
+  .double_column {
+    > :nth-child(1) {
+      inline-size: auto;
+    }
+  }
+}

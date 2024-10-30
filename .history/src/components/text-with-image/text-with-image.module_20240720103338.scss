@@ -1,0 +1,78 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: grid;
+}
+
+.text {
+  grid-area: text;
+  padding: var(--px-big);
+}
+
+.image {
+  grid-area: image;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.default {
+  grid-auto-rows: max(600px, 17svw);
+}
+
+.image_left,
+.image_left_compact {
+  grid-template-areas: "image text";
+  > img {
+    padding-inline-end: var(--px-small);
+  }
+}
+
+.image_right,
+.image_right_compact {
+  grid-template-areas: "text image";
+  > div {
+    padding-inline-end: var(--px-small);
+  }
+}
+
+.image_left,
+.image_right {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image_left_compact {
+  grid-template-columns: 1fr 3fr;
+}
+
+.image_right_compact {
+  grid-template-columns: 3fr 1fr;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+
+  .default {
+    .image {
+      block-size: max(325px, 20svw);
+    };
+    }
+  }
+  .image_left,
+  .image_left_compact,
+  .image_right,
+  .image_right_compact {
+    grid-template-columns: 1fr;
+    grid-template-areas: "image" "text";
+
+    > div {
+      padding: 0;
+    }
+
+    > img {
+      padding-inline-end: 0;
+    }
+  }
+}

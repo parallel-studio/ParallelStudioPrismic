@@ -1,0 +1,71 @@
+"use client";
+import { ElementType, FC, useEffect, useId, useRef } from "react";
+
+import { isFilled, RichTextField } from "@prismicio/client";
+import { PrismicRichText } from "@prismicio/react";
+import { animate, easeOut } from "framer-motion";
+
+import { useLayout } from "@/context/layout";
+import { useTheme } from "@/context/theme";
+
+import { Title } from "../title/title";
+import { useMegaHeroApi } from "./context";
+import styles from "./mega-hero.module.scss";
+import { MegaHeroInfo } from "./mega-hero-info";
+import { useProject } from "./useProject";
+
+type MegaHeroHeaderProps = {
+    as?: ElementType;
+    slogan: RichTextField;
+};
+
+export const MegaHeroHeader: FC<MegaHeroHeaderProps> = ({ slogan }) => {
+    const id = useId();
+    const ref = useRef(null);
+    const { activeLayout } = useLayout();
+    const isMobileLayoutActive = activeLayout === "mobile";
+
+    const { item } = useMegaHeroApi();
+
+    useEffect(() => {
+        if (item) {
+            const animation = {
+                opacity: [0, 1],
+            };
+
+            animate(ref.current, animation, {
+                duration: 0.3,
+                delay: 0.1,
+                ease: easeOut,
+            });
+        }
+    }, [item]);
+
+    const { theme } = useTheme();
+
+    const { project } = useProject({ item });
+
+    const title = isFilled.keyText(project?.title) ? project.title : undefined;
+
+    const desscription = isFilled.keyText(project?.description)
+        ? project.description
+        : undefined;
+
+    return (
+        <div ref={ref} className={styles.header} key={id}>
+            {project && (
+                <Title
+                    title={title}
+                    description={desscription}
+                    color={theme.color}
+                    className={}
+                />
+            )}
+            {!project && item && (
+                <PrismicRichText field={item.bypass_video_slogan} />
+            )}
+            {!project && !item && <PrismicRichText field={slogan} />}
+            <MegaHeroInfo />
+        </div>
+    );
+};

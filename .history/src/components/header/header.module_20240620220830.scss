@@ -1,0 +1,27 @@
+@use "@/styles/_media.scss" as media;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  inline-size: 100%;
+  text-transform: uppercase;
+
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

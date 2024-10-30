@@ -1,0 +1,31 @@
+{
+  "plugins": ["simple-import-sort", "jsx-a11y"],
+  "extends": [
+    "next/core-web-vitals",
+    "prettier",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "settings": { "import/core-modules": ["styled-jsx/css"] },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [["^react"], ["^antd"], ["^@?\\w"], ["@/(.*)"], ["^[./]"]]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["*.graphql"],
+      "parser": "@graphql-eslint/eslint-plugin",
+      "plugins": ["@graphql-eslint"],
+      "rules": {
+        "@graphql-eslint/known-type-names": "error"
+      }
+    }
+  ]
+}

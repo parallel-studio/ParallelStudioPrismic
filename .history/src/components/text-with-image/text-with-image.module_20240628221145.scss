@@ -1,0 +1,18 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: grid;
+  column-gap: var(--px-small);
+  grid-template-columns: repeat(2, 1fr);
+
+  > * {
+    inline-size: 50%;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+}
+@include media.medium {
+}
+
+@include media.small {
+}

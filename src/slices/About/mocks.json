@@ -1,0 +1,118 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "text": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Nisi sint voluptate cupidatat esse dolor fugiat."
+            }
+          }
+        ]
+      },
+      "contact_link": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      "contact_link_label": {
+        "__TYPE__": "FieldContent",
+        "value": "numeral",
+        "type": "Text"
+      },
+      "contacts": {
+        "__TYPE__": "GroupContentType",
+        "value": [
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "title",
+                {
+                  "__TYPE__": "FieldContent",
+                  "value": "stopped",
+                  "type": "Text"
+                }
+              ],
+              [
+                "label",
+                {
+                  "__TYPE__": "FieldContent",
+                  "value": "piano",
+                  "type": "Text"
+                }
+              ],
+              [
+                "link",
+                {
+                  "__TYPE__": "LinkContent",
+                  "value": {
+                    "__TYPE__": "ExternalLink",
+                    "url": "https://slicemachine.dev"
+                  }
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "__TYPE__": "GroupContentType",
+        "value": [
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "text",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "paragraph",
+                      "content": {
+                        "text": "Et laborum quis non aliquip adipisicing enim."
+                      }
+                    }
+                  ]
+                }
+              ],
+              [
+                "link_label",
+                {
+                  "__TYPE__": "FieldContent",
+                  "value": "done",
+                  "type": "Text"
+                }
+              ],
+              [
+                "link",
+                {
+                  "__TYPE__": "LinkContent",
+                  "value": {
+                    "__TYPE__": "ExternalLink",
+                    "url": "https://prismic.io"
+                  }
+                }
+              ],
+              [
+                "color",
+                {
+                  "__TYPE__": "FieldContent",
+                  "value": "#4562b4",
+                  "type": "Color"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "items": []
+  }
+]

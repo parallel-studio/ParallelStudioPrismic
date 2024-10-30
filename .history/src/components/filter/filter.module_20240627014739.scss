@@ -1,0 +1,25 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: flex;
+  padding: 0;
+  gap: 2ch;
+}
+
+.item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: ease-in 0.3s;
+  a {
+    color: var(--gray-color);
+    &[aria-current="page"] {
+      color: black;
+    }
+  }
+}
+@include media.medium {
+}
+
+@include media.small {
+}

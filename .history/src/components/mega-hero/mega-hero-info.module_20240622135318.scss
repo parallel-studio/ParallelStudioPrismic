@@ -1,0 +1,19 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: var(--px-medium);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--px-small);
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

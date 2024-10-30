@@ -1,0 +1,26 @@
+@use "@/styles/_media.scss" as media;
+
+.controller {
+  block-size: 100%;
+  inline-size: 100%;
+  background-color: white;
+
+  &[mediaisfullscreen] {
+    background-color: black;
+  }
+}
+
+.media_control_bar {
+  background-color: black;
+}
+
+.media_range {
+  --media-range-thumb-border: none;
+  --media-range-thumb-border-radius: 0px;
+  --media-range-thumb-opacity: 0;
+}
+@include media.medium {
+}
+
+@include media.small {
+}

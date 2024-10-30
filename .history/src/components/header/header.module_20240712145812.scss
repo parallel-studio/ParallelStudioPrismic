@@ -1,0 +1,60 @@
+@use "@/styles/_media.scss" as media;
+
+.header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: white;
+  padding-inline: var(--px-small);
+  padding-block: calc(var(--px-small) * 0.75);
+  inline-size: 100%;
+  // max-block-size: 53.632px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  a {
+    position: relative;
+    &:hover {
+      color: red;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: red;
+        transition: width 0.3s ease-in-out;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  gap: var(--px-small);
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}
+
+@include media.x_large {
+}

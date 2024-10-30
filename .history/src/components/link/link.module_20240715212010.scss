@@ -1,0 +1,38 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: block;
+  justify-content: center;
+  gap: 0.3ch;
+  margin-block-start: var(--px-small);
+  font-weight: 300;
+  font-size: 2.625rem;
+  line-height: 1.15;
+
+  svg {
+    position: relative;
+    top: 0.15em;
+  }
+
+  &:hover {
+    svg {
+      transform: translateX(5px);
+      transition: transform 0.5s ease-in;
+    }
+  }
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .wrapper {
+    font-size: 2rem;
+
+    svg {
+      top: 0.13em;
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+  }
+}

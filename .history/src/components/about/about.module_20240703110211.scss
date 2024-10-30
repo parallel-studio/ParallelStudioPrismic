@@ -1,0 +1,25 @@
+@use "@/styles/_media.scss" as media;
+
+.text {
+  max-inline-size: 60ch;
+  margin-inline-end: var(--px-medium);
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .wrapper {
+    margin-block-start: calc(20svh - media.$headersize);
+  }
+
+  .text {
+    inline-size: 100%;
+    max-inline-size: none;
+    margin-inline-end: auto;
+  }
+
+  .container {
+    gap: var(--px-big);
+  }
+}

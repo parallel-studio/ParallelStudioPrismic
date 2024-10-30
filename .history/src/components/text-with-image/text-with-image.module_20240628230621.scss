@@ -1,0 +1,26 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: grid;
+  column-gap: var(--px-small);
+  grid-template-areas: "text image";
+  grid-auto-rows: max(600px, 17svw);
+
+  > div {
+    grid-area: text;
+    padding: var(--px-big);
+  }
+
+  img {
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

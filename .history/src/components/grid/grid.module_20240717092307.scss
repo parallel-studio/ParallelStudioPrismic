@@ -1,0 +1,19 @@
+@use "@/styles/_media.scss" as media;
+
+.small {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, max(250px, 5svw));
+  column-gap: var(--px-medium);
+  row-gap: var(--px-small);
+  align-items: first baseline;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .small {
+    grid-template-columns: repeat(auto-fit, max(225px, 5svw));
+    gap: var(--px-small);
+  }
+}

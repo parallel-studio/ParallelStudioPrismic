@@ -1,0 +1,15 @@
+@use "@/styles/_media.scss" as media;
+
+.full_screen_video {
+  inline-size: 80%;
+  block-size: 90svh;
+}
+@include media.medium {
+}
+
+@include media.small {
+  .full_screen_video {
+    block-size: auto;
+    min-block-size: 60svh;
+  }
+}

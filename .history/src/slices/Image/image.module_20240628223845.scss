@@ -1,0 +1,12 @@
+@use "@/styles/_media.scss" as media;
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

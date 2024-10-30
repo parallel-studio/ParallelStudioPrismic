@@ -1,0 +1,36 @@
+@use "@/styles/_media.scss" as media;
+
+$gap: calc(var(--px-small) / 6);
+$endsize: 300px;
+
+.item {
+  flex-shrink: 0;
+  z-index: 1;
+  block-size: 100%;
+
+  &:last-of-type {
+    margin-right: calc($endsize + $gap);
+  }
+
+  video {
+    block-size: 100%;
+    inline-size: 100%;
+    object-fit: cover;
+  }
+}
+
+.h {
+  background-color: red;
+  aspect-ratio: 16 / 10;
+}
+
+.v {
+  background-color: blue;
+  aspect-ratio: 12 / 16;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

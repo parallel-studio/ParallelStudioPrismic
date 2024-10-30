@@ -1,0 +1,15 @@
+@use "@/styles/_media.scss" as media;
+
+.main {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  padding-inline: var(--px-small);
+  min-block-size: calc(100svh - media.$headersize);
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

@@ -1,0 +1,546 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "image": {
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f",
+          "width": 6000,
+          "height": 4000
+        },
+        "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f",
+        "width": 6000,
+        "height": 4000,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 0
+          },
+          "background": "transparent"
+        },
+        "credits": null,
+        "alt": null,
+        "__TYPE__": "ImageContent",
+        "thumbnails": {}
+      },
+      "height_variant": {
+        "__TYPE__": "FieldContent",
+        "value": "default",
+        "type": "Select"
+      },
+      "height": {
+        "__TYPE__": "FieldContent",
+        "value": "7",
+        "type": "Number"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  },
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "smart",
+    "primary": {
+      "images": {
+        "__TYPE__": "GroupContentType",
+        "value": [
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "image",
+                {
+                  "origin": {
+                    "id": "main",
+                    "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a",
+                    "width": 3024,
+                    "height": 3778
+                  },
+                  "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a",
+                  "width": 3024,
+                  "height": 3778,
+                  "edit": {
+                    "zoom": 1,
+                    "crop": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "background": "transparent"
+                  },
+                  "credits": null,
+                  "alt": null,
+                  "__TYPE__": "ImageContent",
+                  "thumbnails": {}
+                }
+              ]
+            ]
+          },
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "image",
+                {
+                  "url": "https://images.unsplash.com/photo-1603824231744-517ef271df7e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MjM5ODMzNzN8MA&ixlib=rb-4.0.3&q=85",
+                  "alt": "sliced lemon fruit on blue surface",
+                  "origin": {
+                    "id": "SDX4_TQcxGU",
+                    "url": "https://images.unsplash.com/photo-1603824231744-517ef271df7e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MjM5ODMzNzN8MA&ixlib=rb-4.0.3&q=85",
+                    "width": 3690,
+                    "height": 2470
+                  },
+                  "width": 3690,
+                  "height": 2470,
+                  "edit": {
+                    "background": "transparent",
+                    "zoom": 1,
+                    "crop": {
+                      "x": 0,
+                      "y": 0
+                    }
+                  },
+                  "credits": null,
+                  "__TYPE__": "ImageContent",
+                  "thumbnails": {}
+                }
+              ]
+            ]
+          },
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "image",
+                {
+                  "url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MjM5ODMzNzN8MA&ixlib=rb-4.0.3&q=85",
+                  "alt": "orange fruits under blue sky during daytime",
+                  "origin": {
+                    "id": "eaOjEz8746k",
+                    "url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MjM5ODMzNzN8MA&ixlib=rb-4.0.3&q=85",
+                    "width": 5688,
+                    "height": 3792
+                  },
+                  "width": 5688,
+                  "height": 3792,
+                  "edit": {
+                    "background": "transparent",
+                    "zoom": 1,
+                    "crop": {
+                      "x": 0,
+                      "y": 0
+                    }
+                  },
+                  "credits": null,
+                  "__TYPE__": "ImageContent",
+                  "thumbnails": {}
+                }
+              ]
+            ]
+          },
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "image",
+                {
+                  "url": "https://images.unsplash.com/photo-1704960945989-3aef8ee6aa2c?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzIzOTgzMzczfDA&ixlib=rb-4.0.3&q=85",
+                  "alt": "a couple of lemons sitting on top of a table",
+                  "origin": {
+                    "id": "RVo8fWNBBvQ",
+                    "url": "https://images.unsplash.com/photo-1704960945989-3aef8ee6aa2c?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzIzOTgzMzczfDA&ixlib=rb-4.0.3&q=85",
+                    "width": 6000,
+                    "height": 4000
+                  },
+                  "width": 6000,
+                  "height": 4000,
+                  "edit": {
+                    "background": "transparent",
+                    "zoom": 1,
+                    "crop": {
+                      "x": 0,
+                      "y": 0
+                    }
+                  },
+                  "credits": null,
+                  "__TYPE__": "ImageContent",
+                  "thumbnails": {}
+                }
+              ]
+            ]
+          },
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "image",
+                {
+                  "url": "https://images.unsplash.com/photo-1587366317133-62e39082c34d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MjM5ODMzNzN8MA&ixlib=rb-4.0.3&q=85",
+                  "alt": "sliced orange fruit on brown wooden table",
+                  "origin": {
+                    "id": "sQi9FM6NYVY",
+                    "url": "https://images.unsplash.com/photo-1587366317133-62e39082c34d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MjM5ODMzNzN8MA&ixlib=rb-4.0.3&q=85",
+                    "width": 4000,
+                    "height": 6000
+                  },
+                  "width": 4000,
+                  "height": 6000,
+                  "edit": {
+                    "background": "transparent",
+                    "zoom": 1,
+                    "crop": {
+                      "x": 0,
+                      "y": 0
+                    }
+                  },
+                  "credits": null,
+                  "__TYPE__": "ImageContent",
+                  "thumbnails": {}
+                }
+              ]
+            ]
+          },
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "image",
+                {
+                  "url": "https://images.unsplash.com/photo-1655504481750-869bedc79cee?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyN3x8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzIzOTgzMzczfDA&ixlib=rb-4.0.3&q=85",
+                  "alt": "a group of limes and a sign on a wood surface",
+                  "origin": {
+                    "id": "J8UfJORxTxk",
+                    "url": "https://images.unsplash.com/photo-1655504481750-869bedc79cee?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyN3x8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzIzOTgzMzczfDA&ixlib=rb-4.0.3&q=85",
+                    "width": 3329,
+                    "height": 4161
+                  },
+                  "width": 3329,
+                  "height": 4161,
+                  "edit": {
+                    "background": "transparent",
+                    "zoom": 1,
+                    "crop": {
+                      "x": 0,
+                      "y": 0
+                    }
+                  },
+                  "credits": null,
+                  "__TYPE__": "ImageContent",
+                  "thumbnails": {}
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "columns": {
+        "__TYPE__": "FieldContent",
+        "value": "1",
+        "type": "Select"
+      },
+      "layouts": {
+        "__TYPE__": "GroupContentType",
+        "value": [
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "breakpoint",
+                {
+                  "__TYPE__": "FieldContent",
+                  "value": "desktop",
+                  "type": "Select"
+                }
+              ],
+              [
+                "columns",
+                {
+                  "__TYPE__": "FieldContent",
+                  "type": "Select",
+                  "value": "3"
+                }
+              ],
+              [
+                "gutter",
+                {
+                  "__TYPE__": "FieldContent",
+                  "type": "Select",
+                  "value": "none"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  },
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "native",
+    "primary": {
+      "image": {
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f",
+          "width": 6000,
+          "height": 4000
+        },
+        "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f",
+        "width": 6000,
+        "height": 4000,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 0
+          },
+          "background": "transparent"
+        },
+        "credits": null,
+        "alt": null,
+        "__TYPE__": "ImageContent",
+        "thumbnails": {}
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  },
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "bannerSmallXBigXSmall",
+    "primary": {
+      "images": {
+        "__TYPE__": "GroupContentType",
+        "value": [
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "image",
+                {
+                  "origin": {
+                    "id": "main",
+                    "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482",
+                    "width": 4016,
+                    "height": 6016
+                  },
+                  "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482",
+                  "width": 4016,
+                  "height": 6016,
+                  "edit": {
+                    "zoom": 1,
+                    "crop": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "background": "transparent"
+                  },
+                  "credits": null,
+                  "alt": null,
+                  "__TYPE__": "ImageContent",
+                  "thumbnails": {}
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "block_size": {
+        "__TYPE__": "FieldContent",
+        "value": "double",
+        "type": "Select"
+      },
+      "height_variant": {
+        "__TYPE__": "FieldContent",
+        "value": "default",
+        "type": "Select"
+      },
+      "height": {
+        "__TYPE__": "FieldContent",
+        "value": "64",
+        "type": "Number"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  },
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "bannerBigXSmall",
+    "primary": {
+      "images": {
+        "__TYPE__": "GroupContentType",
+        "value": [
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "image",
+                {
+                  "origin": {
+                    "id": "main",
+                    "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6",
+                    "width": 3212,
+                    "height": 3880
+                  },
+                  "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6",
+                  "width": 3212,
+                  "height": 3880,
+                  "edit": {
+                    "zoom": 1,
+                    "crop": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "background": "transparent"
+                  },
+                  "credits": null,
+                  "alt": null,
+                  "__TYPE__": "ImageContent",
+                  "thumbnails": {}
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "block_size": {
+        "__TYPE__": "FieldContent",
+        "value": "default",
+        "type": "Select"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  },
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "bannerSmallXBig",
+    "primary": {
+      "images": {
+        "__TYPE__": "GroupContentType",
+        "value": [
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "image",
+                {
+                  "origin": {
+                    "id": "main",
+                    "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+                    "width": 5243,
+                    "height": 3495
+                  },
+                  "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+                  "width": 5243,
+                  "height": 3495,
+                  "edit": {
+                    "zoom": 1,
+                    "crop": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "background": "transparent"
+                  },
+                  "credits": null,
+                  "alt": null,
+                  "__TYPE__": "ImageContent",
+                  "thumbnails": {}
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "block_size": {
+        "__TYPE__": "FieldContent",
+        "value": "default",
+        "type": "Select"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  },
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "bannerAutoGrid",
+    "primary": {
+      "images": {
+        "__TYPE__": "GroupContentType",
+        "value": [
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "image",
+                {
+                  "origin": {
+                    "id": "main",
+                    "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+                    "width": 3168,
+                    "height": 4752
+                  },
+                  "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+                  "width": 3168,
+                  "height": 4752,
+                  "edit": {
+                    "zoom": 1,
+                    "crop": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "background": "transparent"
+                  },
+                  "credits": null,
+                  "alt": null,
+                  "__TYPE__": "ImageContent",
+                  "thumbnails": {}
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "block_size": {
+        "__TYPE__": "FieldContent",
+        "value": "default",
+        "type": "Select"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  }
+]

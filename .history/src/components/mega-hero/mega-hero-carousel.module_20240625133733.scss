@@ -1,0 +1,46 @@
+@use "@/styles/_media.scss" as media;
+
+$gap: calc(var(--px-small) / 6);
+$endsize: 300px;
+
+.carousel {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  block-size: 50svh;
+  overflow: hidden;
+}
+
+.carousel_wrapper {
+  display: flex;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  block-size: 100%;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  > li:not(:last-child, :nth-last-of-type(2)) {
+    background-color: white;
+    padding-inline-end: $gap;
+  }
+
+  > li:not(:last-child) {
+    z-index: 1;
+  }
+
+  > li:last-of-type {
+    background-color: transparent;
+    inline-size: 300px;
+  }
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

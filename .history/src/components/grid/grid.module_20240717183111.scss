@@ -1,0 +1,22 @@
+@use "@/styles/_media.scss" as media;
+
+.small {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, max(250px, 5svw));
+  column-gap: var(--px-medium);
+  row-gap: calc(var(--px-tiny) * 1.5);
+  align-items: first baseline;
+}
+
+@include media.medium {
+  .small {
+    gap: var(--px-tiny);
+  }
+}
+
+@include media.small {
+  .small {
+    grid-template-columns: repeat(auto-fit, max(235px, 5svw));
+    gap: var(--px-tiny);
+  }
+}

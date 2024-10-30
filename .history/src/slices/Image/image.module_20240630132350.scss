@@ -1,0 +1,24 @@
+@use "@/styles/_media.scss" as media;
+
+.image {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.gallery_image_container {
+  display: block;
+  height: 100%;
+}
+
+.gallery_image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

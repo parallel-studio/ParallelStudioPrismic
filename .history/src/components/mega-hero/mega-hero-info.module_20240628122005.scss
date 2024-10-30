@@ -1,0 +1,11 @@
+@use "@/styles/_media.scss" as media;
+
+.info {
+  margin-block-end: var(--px-tiny);
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

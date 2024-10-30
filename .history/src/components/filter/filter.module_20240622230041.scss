@@ -1,0 +1,13 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: flex;
+}
+
+.item {
+}
+@include media.medium {
+}
+
+@include media.small {
+}

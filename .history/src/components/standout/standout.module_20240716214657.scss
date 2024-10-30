@@ -1,0 +1,30 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  position: sticky;
+  bottom: 0;
+  margin-inline-start: calc(-1 * var(--px-medium));
+  background-color: var(--primary-color);
+  inline-size: calc(100svw + var(--px-medium));
+  color: var(--theme-dark-secondary-color);
+  padding: var(--px-medium);
+  transform: translateY(-50%);
+}
+
+.right {
+  inline-size: 100%;
+  line-height: 1.15;
+  font-size: 1rem;
+
+  p {
+  }
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .wrapper {
+    position: relative;
+  }
+}

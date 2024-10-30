@@ -1,0 +1,24 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: grid;
+  column-gap: var(--px-small);
+  grid-template: 1fr / 1fr 1fr;
+  block-size: max(600px, 17svw);
+
+  > :first-child {
+    padding: var(--px-big);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

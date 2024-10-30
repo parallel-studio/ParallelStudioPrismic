@@ -1,0 +1,50 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: grid;
+  grid-auto-rows: max(600px, 17svw);
+
+  > div {
+    grid-area: text;
+    padding: var(--px-big);
+  }
+
+  img {
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  & > :first-child {
+    padding-inline-end: var(--px-small);
+  }
+}
+
+.image_left,
+.image_left_compact {
+  grid-template-areas: "image text";
+}
+
+.image_right,
+.image_right_compact {
+  grid-template-areas: "text image";
+}
+
+.image_left,
+.image_right {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image_left_compact {
+  grid-template-columns: 1fr 3fr;
+}
+
+.image_right_compact {
+  grid-template-columns: 3fr 1fr;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

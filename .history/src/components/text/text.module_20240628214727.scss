@@ -1,0 +1,23 @@
+@use "@/styles/_media.scss" as media;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.625rem;
+  line-height: 1.25;
+}
+
+.hero {
+  min-block-size: max(350px, 15svw);
+
+  > * {
+    max-inline-size: 50ch;
+  }
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

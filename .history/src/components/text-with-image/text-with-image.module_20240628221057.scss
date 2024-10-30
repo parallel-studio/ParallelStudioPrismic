@@ -1,0 +1,21 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: flex;
+  column-gap: var(--px-small);
+
+  > * {
+    inline-size: 50%;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+
+  :last-child {
+    inline-size: 100%;
+  }
+}
+@include media.medium {
+}
+
+@include media.small {
+}

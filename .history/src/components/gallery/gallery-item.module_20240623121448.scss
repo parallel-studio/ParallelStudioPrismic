@@ -1,0 +1,42 @@
+@use "@/styles/_media.scss" as media;
+
+$tagheight: var(--px-medium);
+
+.item {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  block-size: 100%;
+  overflow: hidden;
+  margin: 0;
+  font-size: 2rem;
+
+  a {
+    block-size: 50%;
+    inline-size: 100%;
+  }
+
+  video {
+    block-size: 100%;
+    inline-size: 100%;
+    object-fit: cover;
+  }
+}
+
+.item {
+  block-size: 500px;
+}
+
+.h {
+  aspect-ratio: 16 / 10;
+}
+
+.v {
+  aspect-ratio: 12 / 16;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

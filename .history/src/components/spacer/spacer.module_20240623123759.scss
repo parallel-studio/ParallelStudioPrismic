@@ -1,0 +1,11 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  margin-block-start: 50svh;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

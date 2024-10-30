@@ -1,0 +1,19 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: var(--px-medium);
+  margin-block-end: var(--px-small);
+}
+
+.tag {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

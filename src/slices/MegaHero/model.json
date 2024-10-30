@@ -1,0 +1,116 @@
+{
+  "id": "mega_hero",
+  "type": "SharedSlice",
+  "name": "MegaHero",
+  "description": "MegaHero",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "slogan": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Slogan",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "items": {
+          "type": "Group",
+          "config": {
+            "label": "Items",
+            "repeat": true,
+            "fields": {
+              "project": {
+                "type": "Link",
+                "config": {
+                  "label": "Project",
+                  "select": "document",
+                  "customtypes": ["project"]
+                }
+              },
+              "project_video": {
+                "type": "Select",
+                "config": {
+                  "label": "Project Video",
+                  "placeholder": "",
+                  "options": ["default", "alternative"],
+                  "default_value": "default"
+                }
+              },
+              "bypass_video": {
+                "type": "Text",
+                "config": {
+                  "label": "Bypass Video",
+                  "placeholder": ""
+                }
+              },
+              "bypass_video_slogan": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Bypass Video Slogan",
+                  "placeholder": "Only applicable if bypass video inserted",
+                  "allowTargetBlank": true,
+                  "multi": "heading2"
+                }
+              },
+              "bypass_video_label_tag": {
+                "type": "Text",
+                "config": {
+                  "label": "Bypass Video Label Tag",
+                  "placeholder": "Only applicable if bypass video inserted"
+                }
+              },
+              "bypass_video_label_name": {
+                "type": "Text",
+                "config": {
+                  "label": "Bypass Video Label Name",
+                  "placeholder": "Only applicable if bypass video inserted"
+                }
+              },
+              "autoplay": {
+                "type": "Boolean",
+                "config": {
+                  "label": "Autoplay",
+                  "default_value": false,
+                  "placeholder_true": "true",
+                  "placeholder_false": "false"
+                }
+              },
+              "timestamp_start": {
+                "type": "Number",
+                "config": {
+                  "label": "Timestamp Start",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "select": null
+          }
+        },
+        "link_label": {
+          "type": "Text",
+          "config": {
+            "label": "Link Label",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

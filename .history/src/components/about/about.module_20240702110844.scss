@@ -1,0 +1,10 @@
+@use "@/styles/_media.scss" as media;
+
+.text {
+  max-inline-size: 60ch;
+}
+@include media.medium {
+}
+
+@include media.small {
+}

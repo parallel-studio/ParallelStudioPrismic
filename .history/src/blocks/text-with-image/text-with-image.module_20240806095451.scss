@@ -1,0 +1,77 @@
+@use "@/styles/_media.scss" as media;
+
+$gap: var(--px-small);
+
+.wrapper {
+  display: grid;
+  gap: $gap;
+  grid-auto-columns:;
+}
+
+.text {
+  grid-area: text;
+  padding: var(--px-big);
+}
+
+.image {
+  grid-area: image;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.default {
+  grid-auto-rows: calc(2 * var(--block-height-base));
+}
+
+.gallery {
+  grid-auto-rows: var(--block-height-base);
+}
+
+.image_left,
+.image_left_compact {
+  grid-template-areas: "image text";
+}
+
+.image_right,
+.image_right_compact {
+  grid-template-areas: "text image";
+}
+
+.image_left,
+.image_right {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image_left_compact {
+  grid-template-columns: calc(25% - $gap * 3 / 4) 3fr;
+}
+
+.image_right_compact {
+  grid-template-columns: 3fr calc(25% - $gap * 3 / 4);
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .default {
+    grid-auto-rows: auto;
+    .image {
+      block-size: var(--block-height-base);
+    }
+  }
+
+  .text {
+    padding-inline: 0;
+    min-block-size: none !important;
+  }
+
+  .image_left,
+  .image_left_compact,
+  .image_right,
+  .image_right_compact {
+    grid-template-columns: 1fr;
+    grid-template-areas: "image" "text";
+  }
+}

@@ -1,0 +1,97 @@
+@use "@/styles/_media.scss" as media;
+
+@mixin hover_effect($distance) {
+  &:hover {
+    svg {
+      transform: translate3d($distance, 0, 0);
+      transition: transform 0.1s ease-out 0.1s;
+    }
+  }
+  &:not(:hover) {
+    svg {
+      transform: translate3d(0, 0, 0);
+      transition: transform 0.3s ease-out 0.1s;
+    }
+  }
+}
+
+.wrapper {
+  display: block;
+  font-weight: 300;
+  inline-size: fit-content;
+  text-wrap: nowrap;
+
+  svg {
+    position: relative;
+  }
+}
+
+.large {
+  font-size: 2.625rem;
+  line-height: 1.15;
+
+  svg {
+    top: 0.15em;
+  }
+}
+
+.medium {
+  font-size: 1.5rem;
+  line-height: 1.15;
+
+  svg {
+    top: 0.15em;
+  }
+}
+
+.small {
+  font-size: 1rem;
+  line-height: 1.15;
+
+  svg {
+    top: 0.15em;
+  }
+}
+
+.go_to {
+  @include hover_effect(0.15em);
+}
+
+.back_to {
+  @include hover_effect(-0.15em);
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .large {
+    font-size: 2rem;
+
+    svg {
+      top: 0.13em;
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+  }
+
+  .medium {
+    font-size: 1.25rem;
+
+    svg {
+      top: 0.13em;
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+
+  .small {
+    font-size: 1rem;
+
+    svg {
+      top: 0.13em;
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}
