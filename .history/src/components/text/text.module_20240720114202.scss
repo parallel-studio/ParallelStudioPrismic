@@ -1,0 +1,48 @@
+@use "@/styles/_media.scss" as media;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--px-big);
+
+  > * {
+    max-inline-size: 75ch;
+  }
+}
+
+.hero {
+  min-block-size: var(--block-height-base);
+
+  p a {
+    hyphens: auto;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.3em;
+
+    &:hover {
+      color: var(--theme-active-color);
+    }
+  }
+}
+
+.fullscreen {
+  min-block-size: calc(100svh - media.$headersize);
+  p {
+    margin: 0;
+    // line-height: 1;
+  }
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .wrapper {
+    padding-inline: 0;
+    > * {
+      max-inline-size: none;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-block-size: calc(100svh - media.$headersize);
+}
+
+.container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: var(--px-medium);
+  block-size: 100%;
+}
+
+.text {
+  margin-inline-end: var(--px-medium);
+  max-inline-size: 60ch;
+}
+
+.contacts {
+  margin-block-start: var(--px-big);
+}
+
+.big_link {
+  margin-block-start: var(--px-small);
+}
+@include media.large {
+  .standout {
+    min-block-size: 25svh;
+  }
+}
+
+@include media.medium {
+  .container {
+    padding-block: var(--px-small);
+  }
+}
+
+@include media.small {
+  .wrapper {
+    padding-block-start: var(--px-medium);
+  }
+
+  .container {
+    justify-content: flex-start;
+    block-size: auto;
+  }
+
+  .double_container {
+    gap: var(--px-medium);
+  }
+
+  .text {
+    margin-inline-end: auto;
+    inline-size: 100%;
+    max-inline-size: none;
+  }
+
+  .contacts {
+    margin-block-start: var(--px-medium);
+  }
+}

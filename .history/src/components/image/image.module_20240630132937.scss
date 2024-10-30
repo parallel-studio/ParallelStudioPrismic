@@ -1,0 +1,8 @@
+.placeholder {
+  position: absolute;
+  display: flex;
+  block-size: 100%;
+  inline-size: 100%;
+  //   filter: blur(10px);
+  z-index: -1;
+}

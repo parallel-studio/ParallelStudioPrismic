@@ -1,0 +1,15 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: flex;
+}
+
+.double_column {
+  flex: 2;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

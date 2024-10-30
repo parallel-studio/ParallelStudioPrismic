@@ -1,0 +1,9 @@
+@use "@/styles/_media.scss" as media;
+
+.header {
+}
+@include media.medium {
+}
+
+@include media.small {
+}

@@ -1,0 +1,35 @@
+@use "@/styles/_media.scss" as media;
+
+.links_title {
+  color: var(--gray-color);
+  font-size: x-small;
+}
+
+.links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    font-weight: 300;
+    font-size: 1.225rem;
+    line-height: 1.15;
+
+    &:hover {
+      color: var(--gray-color);
+      transition: color 0.4s ease-in-out;
+    }
+  }
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

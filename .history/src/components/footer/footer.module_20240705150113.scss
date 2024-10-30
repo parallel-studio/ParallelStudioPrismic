@@ -1,0 +1,44 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: stretch;
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  padding-inline: var(--px-medium);
+  padding-block-start: calc(var(--px-medium) * 1.5);
+  padding-block-end: var(--px-small);
+  block-size: max(400px, 33svh);
+  min-block-size: 33svh;
+  color: white;
+  font-size: 0.875em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-row: auto;
+  gap: 2ch;
+}
+
+.legal {
+  font-weight: 300;
+  color: var(--gray-color);
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .wrapper {
+    grid-template-columns: 1fr;
+    padding-inline: var(--px-small);
+  }
+}

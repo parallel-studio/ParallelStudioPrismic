@@ -1,0 +1,25 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: var(--px-medium);
+  line-height: 1;
+}
+
+.tag {
+  font-size: 0.65em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-block-end: calc(var(--px-tiny) / 2);
+}
+
+.client {
+  text-transform: uppercase;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

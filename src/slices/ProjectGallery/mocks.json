@@ -1,0 +1,236 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "projects": {
+        "__TYPE__": "GroupContentType",
+        "value": [
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "project",
+                {
+                  "__TYPE__": "LinkContent",
+                  "value": {
+                    "__TYPE__": "DocumentLink",
+                    "id": "mock_document_id"
+                  }
+                }
+              ],
+              [
+                "project_video",
+                {
+                  "__TYPE__": "FieldContent",
+                  "value": "alternative",
+                  "type": "Select"
+                }
+              ],
+              [
+                "timestamp_start",
+                {
+                  "__TYPE__": "FieldContent",
+                  "value": "70",
+                  "type": "Number"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "gutter": {
+        "__TYPE__": "FieldContent",
+        "value": "small",
+        "type": "Select"
+      }
+    },
+    "items": []
+  },
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "gallerySmallXBig",
+    "primary": {
+      "projects": {
+        "__TYPE__": "GroupContentType",
+        "value": [
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "project",
+                {
+                  "__TYPE__": "LinkContent",
+                  "value": {
+                    "__TYPE__": "DocumentLink",
+                    "id": "mock_document_id"
+                  }
+                }
+              ],
+              [
+                "project_video",
+                {
+                  "__TYPE__": "FieldContent",
+                  "value": "default",
+                  "type": "Select"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "gutter": {
+        "__TYPE__": "FieldContent",
+        "value": "tiny",
+        "type": "Select"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  },
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "galleryBigXSmall",
+    "primary": {
+      "projects": {
+        "__TYPE__": "GroupContentType",
+        "value": [
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "project",
+                {
+                  "__TYPE__": "LinkContent",
+                  "value": {
+                    "__TYPE__": "DocumentLink",
+                    "id": "mock_document_id"
+                  }
+                }
+              ],
+              [
+                "project_video",
+                {
+                  "__TYPE__": "FieldContent",
+                  "value": "alternative",
+                  "type": "Select"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "gutter": {
+        "__TYPE__": "FieldContent",
+        "value": "tiny",
+        "type": "Select"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  },
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "gallerySmallXBigXSmall",
+    "primary": {
+      "projects": {
+        "__TYPE__": "GroupContentType",
+        "value": [
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "project",
+                {
+                  "__TYPE__": "LinkContent",
+                  "value": {
+                    "__TYPE__": "DocumentLink",
+                    "id": "mock_document_id"
+                  }
+                }
+              ],
+              [
+                "project_video",
+                {
+                  "__TYPE__": "FieldContent",
+                  "value": "alternative",
+                  "type": "Select"
+                }
+              ],
+              [
+                "timestamp_start",
+                {
+                  "__TYPE__": "FieldContent",
+                  "value": "21",
+                  "type": "Number"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  },
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "galleryBigXSmallXBig",
+    "primary": {
+      "projects": {
+        "__TYPE__": "GroupContentType",
+        "value": [
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "project",
+                {
+                  "__TYPE__": "LinkContent",
+                  "value": {
+                    "__TYPE__": "DocumentLink",
+                    "id": "mock_document_id"
+                  }
+                }
+              ],
+              [
+                "project_video",
+                {
+                  "__TYPE__": "FieldContent",
+                  "value": "default",
+                  "type": "Select"
+                }
+              ],
+              [
+                "timestamp_start",
+                {
+                  "__TYPE__": "FieldContent",
+                  "value": "76",
+                  "type": "Number"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  }
+]

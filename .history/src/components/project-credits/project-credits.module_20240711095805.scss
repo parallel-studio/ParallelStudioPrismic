@@ -1,0 +1,19 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  text-justify: inter-word;
+  text-wrap: pretty;
+  padding-block: 120px;
+  max-inline-size: 75svw;
+  margin-inline: auto;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .wrapper {
+    padding-block: 60px;
+    max-inline-size: none;
+  }
+}

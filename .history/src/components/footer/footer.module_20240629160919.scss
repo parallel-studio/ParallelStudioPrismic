@@ -1,0 +1,79 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: flex;
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2ch;
+  background-color: black;
+  padding-inline: var(--px-medium);
+  padding-block-end: var(--px-small);
+  padding-block-start: calc(var(--px-medium) * 1.5);
+  block-size: max(400px, 33svh);
+  color: white;
+  font-size: 0.875em;
+}
+
+.legal {
+  position: absolute;
+  bottom: var(--px-small);
+  left: var(--px-small);
+}
+
+.links_container {
+  flex-shrink: 1;
+  flex-grow: 0;
+  inline-size: 350px;
+}
+
+.links_title,
+.legal {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.links_title {
+  font-size: x-small;
+}
+
+.back_to {
+  display: flex;
+  justify-content: center;
+  gap: 0.3ch;
+  margin-block-start: var(--px-small);
+  font-weight: 300;
+  font-size: 2.625rem;
+  line-height: 1.15;
+
+  svg {
+    position: relative;
+    top: 0.1em;
+  }
+}
+
+.links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    font-weight: 300;
+    font-size: 1.225rem;
+    line-height: 1.15;
+  }
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

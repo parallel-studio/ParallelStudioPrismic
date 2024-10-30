@@ -1,0 +1,87 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: grid;
+  gap: var(--px-small);
+}
+
+.text {
+  grid-area: text;
+  padding: var(--px-big);
+}
+
+.image {
+  grid-area: image;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.default {
+  grid-auto-rows: calc(2 * var(--block-height-base));
+}
+
+.image_left,
+.image_left_compact {
+  grid-template-areas: "image text";
+  // > img {
+  //   padding-inline-end: var(--px-small);
+  // }
+}
+
+.image_right,
+.image_right_compact {
+  grid-template-areas: "text image";
+  // > div {
+  //   padding-inline-end: var(--px-small);
+  // }
+}
+
+.image_left,
+.image_right {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image_left_compact {
+  grid-template-columns: 1fr 3fr;
+  > img {
+    max-inline-size: calc(1fr);
+  }
+}
+
+.image_right_compact {
+  grid-template-columns: 3fr 1fr;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .default {
+    grid-auto-rows: auto;
+    .image {
+      block-size: var(--block-height-base);
+    }
+  }
+
+  .text {
+    padding-inline: 0;
+    min-block-size: none !important;
+  }
+
+  .image {
+    padding-block-end: var(--px-small);
+  }
+
+  .image_left,
+  .image_left_compact,
+  .image_right,
+  .image_right_compact {
+    grid-template-columns: 1fr;
+    grid-template-areas: "image" "text";
+
+    > img {
+      padding-inline-end: 0;
+    }
+  }
+}

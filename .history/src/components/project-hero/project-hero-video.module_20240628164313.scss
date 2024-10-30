@@ -1,0 +1,48 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  overflow: hidden;
+
+  mux-player {
+    --live-button: none;
+    --seek-backward-button: none;
+    --seek-forward-button: none;
+    --captions-button: none;
+    --airplay-button: none;
+    --pip-button: none;
+    --cast-button: none;
+    --playback-rate-button: none;
+    --time-display: none;
+    --duration-display: none;
+
+    --media-object-fit: contain;
+    --media-object-position: left;
+
+    ::part(center play button pre-play) {
+      --media-control-background: transparent;
+      --media-range-bar-color: transparent;
+    }
+
+    ::part(poster) {
+    }
+  }
+}
+
+.playing {
+  mux-player {
+    --media-object-fit: cover;
+  }
+}
+
+.player {
+  block-size: 100%;
+  inline-size: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

@@ -1,0 +1,15 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: flex;
+  column-gap: var(--px-small);
+
+  > * {
+    inline-size: 50%;
+  }
+}
+@include media.medium {
+}
+
+@include media.small {
+}

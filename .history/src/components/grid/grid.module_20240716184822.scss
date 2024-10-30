@@ -1,0 +1,32 @@
+@use "@/styles/_media.scss" as media;
+
+.small_grid {
+  display: grid;
+  margin-block-start: var(--px-big);
+  inline-size: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(max(250px, 5svw), 1fr));
+  gap: var(--px-medium);
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .wrapper {
+    margin-block-start: calc(1.25 * var(--px-big) - media.$headersize);
+  }
+
+  .contacts {
+    gap: var(--px-small);
+  }
+
+  .text {
+    inline-size: 100%;
+    max-inline-size: none;
+    margin-inline-end: auto;
+  }
+
+  .container {
+    gap: var(--px-big);
+  }
+}

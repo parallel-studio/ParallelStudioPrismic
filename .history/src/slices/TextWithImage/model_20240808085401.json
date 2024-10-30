@@ -1,0 +1,228 @@
+{
+  "id": "text_with_image",
+  "type": "SharedSlice",
+  "name": "Text",
+  "description": "TextWithImage",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TextWithImage",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,strong,em,hyperlink,list-item,o-list-item,preformatted,embed"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "height_variant": {
+          "type": "Select",
+          "config": {
+            "label": "Height Variant",
+            "placeholder": "",
+            "options": ["default", "auto", "fixed", "double", "full_screen"],
+            "default_value": "default"
+          }
+        },
+        "height": {
+          "type": "Number",
+          "config": {
+            "label": "Height",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "textLeftImageRight",
+      "name": "Text Half - Image Half",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TextWithImage",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "height_variant": {
+          "type": "Select",
+          "config": {
+            "label": "Height Variant",
+            "placeholder": "",
+            "options": ["default", "auto", "fixed", "double"],
+            "default_value": "default"
+          }
+        },
+        "height": {
+          "type": "Number",
+          "config": {
+            "label": "Height",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "imageLeftTextRight",
+      "name": "Image Half - Text Half",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TextWithImage",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "height_variant": {
+          "type": "Select",
+          "config": {
+            "label": "Height Variant",
+            "placeholder": "",
+            "options": ["default", "auto", "fixed", "double"],
+            "default_value": "default"
+          }
+        },
+        "height": {
+          "type": "Number",
+          "config": {
+            "label": "Height",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "textLargeImageSmall",
+      "name": "Text Large - Image Small",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TextWithImage",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "height_variant": {
+          "type": "Select",
+          "config": {
+            "label": "Height Variant",
+            "placeholder": "",
+            "options": ["default", "auto", "fixed", "double"],
+            "default_value": "default"
+          }
+        },
+        "height": {
+          "type": "Number",
+          "config": {
+            "label": "Height",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "imageSmallTextLarge",
+      "name": "Image Small - Text Large",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TextWithImage",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "height_variant": {
+          "type": "Select",
+          "config": {
+            "label": "Height Variant",
+            "placeholder": "",
+            "options": ["default", "auto", "fixed", "double"],
+            "default_value": "default"
+          }
+        },
+        "height": {
+          "type": "Number",
+          "config": {
+            "label": "Height",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

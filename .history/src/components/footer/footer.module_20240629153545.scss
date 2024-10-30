@@ -1,0 +1,33 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: flex;
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  gap: 2ch;
+  background-color: black;
+  padding-inline: var(--px-medium);
+  padding-block: var(--px-small);
+  block-size: 500px;
+  color: white;
+  font-size: 0.875em;
+}
+
+.legal {
+  font-size: 0.7em;
+  color: rgba(255, 255, 255, 0.669);
+}
+
+.back_to {
+}
+
+.links {
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

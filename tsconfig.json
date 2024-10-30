@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/graphql/*": ["./graphql/*"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/styles/*": ["./src/styles/*"],
+      "@/public/*": ["./public/*"],
+      "@/slices/*": ["./src/slices/*"],
+      "@/prismicio": ["./src/prismicio"],
+      "@/types": ["./prismicio-types.d.ts"]
+    },
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "video.d.ts",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "i18nconfig.js",
+    "next.config.mjs"
+  ],
+  "exclude": ["node_modules", "graphql/*.ts"]
+}

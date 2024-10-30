@@ -1,0 +1,8 @@
+<svg width="0" height="0">
+    <defs>
+        <filter id="whiteBackgroundFilter" x="0" y="0" width="100%" height="100%">
+            <feFlood flood-color="white" flood-opacity="0.3" result="bg"/>
+            <feComposite in="bg" in2="SourceGraphic" operator="over"/>
+        </filter>
+    </defs>
+</svg>

@@ -1,0 +1,20 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+}
+
+.container {
+  block-size: calc(var(--block-height-base) * 2);
+  inline-size: 100%;
+  margin-inline: auto;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .container {
+    block-size: auto;
+    min-block-size: 60svh;
+  }
+}

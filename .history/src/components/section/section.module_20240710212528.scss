@@ -1,0 +1,20 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  line-height: 1.5;
+
+  &:not(:last-child) {
+    margin-block-end: var(--px-small);
+  }
+}
+
+.big {
+  &:not(:last-child) {
+    margin-block-end: var(--px-medium);
+  }
+}
+@include media.medium {
+}
+
+@include media.small {
+}

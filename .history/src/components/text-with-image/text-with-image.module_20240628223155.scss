@@ -1,0 +1,23 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: grid;
+  column-gap: var(--px-small);
+  grid-template: auto / 1fr 1fr;
+
+  > :first-child {
+    padding: var(--px-big);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

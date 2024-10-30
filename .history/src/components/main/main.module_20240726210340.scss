@@ -1,0 +1,18 @@
+@use "@/styles/_media.scss" as media;
+
+.main {
+  display: grid;
+  position: relative;
+  grid-template-columns: minmax(0, 1fr);
+  grid-gap: var(--px-small);
+  z-index: 2;
+  background-color: white;
+  padding-inline: var(--px-small);
+  padding-block-end: var(--px-small);
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

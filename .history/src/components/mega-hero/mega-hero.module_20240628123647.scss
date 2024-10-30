@@ -1,0 +1,54 @@
+@use "@/styles/_media.scss" as media;
+
+.mega {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--px-small);
+  block-size: calc(100svh - media.$headersize - var(--px-small));
+
+  h2 {
+    margin: 0;
+    top: max(var(--px-big));
+    max-inline-size: 75svw;
+    font-size: 3rem;
+  }
+
+  img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+}
+
+$endsize: 300px;
+
+.end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  inline-size: $endsize;
+  block-size: 100%;
+  font-weight: 500;
+  font-size: 1.65rem;
+  text-transform: uppercase;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.placeholder {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

@@ -1,0 +1,149 @@
+@use "@/styles/_media.scss" as media;
+
+.small,
+.medium {
+  gap: var(--px-small);
+}
+
+.film {
+  gap: var(--gallery-gap);
+}
+
+.container {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  > *:not(:last-child) {
+    background-color: white;
+  }
+}
+
+.block {
+  $height: var(--block-height-base);
+
+  &_default {
+    block-size: $height;
+    img {
+      block-size: $height;
+    }
+  }
+
+  &_auto {
+    min-block-size: 100%;
+    img {
+      block-size: 100%;
+    }
+  }
+
+  &_double {
+    min-block-size: calc(2 * $height);
+    img {
+      block-size: calc(2 * $height);
+    }
+  }
+
+  &_full_screen {
+    min-block-size: calc(100svh - media.$headersize);
+    img {
+      block-size: calc(100svh - media.$headersize);
+    }
+  }
+}
+
+.inline {
+  &_default {
+    inline-size: 100%;
+    img {
+      inline-size: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &_auto {
+    max-inline-size: 100svw;
+    img {
+      // margin-inline: auto;
+      // max-inline-size: calc(100svw - var(--px-small) * 2);
+      // block-size: 100%;
+      // object-fit: cover;
+    }
+  }
+}
+
+.default,
+.bannerAutoGrid,
+.smart {
+  grid-auto-flow: column;
+}
+
+.default,
+.bannerAutoGrid {
+  grid-auto-columns: minmax(0, 1fr);
+}
+
+.one_two {
+  grid-template-columns: 1fr 2fr;
+}
+
+.two_one {
+  grid-template-columns: 2fr 1fr;
+}
+
+.big_small_big {
+  grid-template-columns: 1fr 0.75fr 1fr;
+}
+
+.small_big_small {
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+}
+
+.three_to_one {
+  grid-template-columns: 3fr 1fr;
+}
+
+.one_to_three {
+  grid-template-columns: 1fr 3fr;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .small_big_small,
+  .three_to_one,
+  .one_to_three,
+  .default,
+  .one_two,
+  .two_one,
+  .big_small_big,
+  .bannerAutoGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .film {
+    gap: var(--px-medium);
+  }
+
+  .default,
+  .bannerAutoGrid,
+  .smart {
+    grid-auto-flow: row;
+  }
+
+  .block {
+    &_default,
+    &_auto,
+    &_double,
+    &_fixed {
+      block-size: auto;
+      min-block-size: var(--block-height-base);
+    }
+
+    &_double {
+      img {
+        block-size: var(--block-height-base);
+      }
+    }
+  }
+}

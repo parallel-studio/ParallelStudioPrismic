@@ -1,0 +1,46 @@
+$headersize: 57px;
+
+$breakpoint-xs: 480px;
+$breakpoint-s: 820px;
+$breakpoint-md: 1024px;
+$breakpoint-l: 1200px;
+$breakpoint-xl: 1920px;
+
+@mixin x_small {
+  @media screen and (max-width: $breakpoint-xs) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: $breakpoint-s) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (max-width: $breakpoint-l) {
+    @content;
+  }
+}
+
+/* At x_large, min-width is used as the default breakpoint 
+should be large */
+
+@mixin x_large {
+  @media screen and (min-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
+@mixin horizontal_large_vertical_small($height) {
+  @media screen and (min-width: $breakpoint-s) and (max-height: $height) {
+    @content;
+  }
+}

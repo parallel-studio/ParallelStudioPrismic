@@ -1,0 +1,56 @@
+@use "@/styles/_media.scss" as media;
+
+$tagheight: calc(3.5 * var(--px-small));
+
+.item {
+  z-index: 1;
+  margin: 0;
+  block-size: 100%;
+  overflow: hidden;
+  font-size: 1.65rem;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    gap: var(--px-tiny);
+    inline-size: 100%;
+    block-size: 100%;
+  }
+
+  h2 {
+    font-size: max(1.15rem, 1.5svw);
+  }
+}
+
+.video_container {
+  flex-grow: 0;
+  flex-shrink: 0;
+  inline-size: 100%;
+  block-size: 20svw;
+
+  video {
+    object-fit: cover;
+  }
+}
+
+.info {
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0;
+  block-size: $tagheight;
+  font-weight: 300;
+  line-height: 1;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .video_container {
+    block-size: auto;
+    max-block-size: 75svh;
+  }
+  .info {
+    block-size: auto;
+  }
+}

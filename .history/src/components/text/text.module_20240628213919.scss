@@ -1,0 +1,17 @@
+@use "@/styles/_media.scss" as media;
+.wrapper {
+  font-size: 1.625rem;
+  line-height: 1.15;
+  min-block-size: max(300px, 10svw);
+  text-align: center;
+
+  > * {
+    margin-inline: auto;
+    max-inline-size: 50ch;
+  }
+}
+@include media.medium {
+}
+
+@include media.small {
+}

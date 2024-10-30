@@ -1,0 +1,238 @@
+{
+  "id": "project_gallery",
+  "type": "SharedSlice",
+  "name": "ProjectGallery",
+  "description": "ProjectGallery",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "projects": {
+          "type": "Group",
+          "config": {
+            "label": "Projects",
+            "repeat": true,
+            "fields": {
+              "project": {
+                "type": "Link",
+                "config": {
+                  "label": "Project",
+                  "select": "document",
+                  "customtypes": ["project"]
+                }
+              },
+              "project_video": {
+                "type": "Select",
+                "config": {
+                  "label": "Project Video",
+                  "placeholder": "",
+                  "options": ["default", "alternative"],
+                  "default_value": "default"
+                }
+              }
+            }
+          }
+        },
+        "gutter": {
+          "type": "Select",
+          "config": {
+            "label": "Gutter",
+            "placeholder": "",
+            "options": ["tiny", "small"],
+            "default_value": "tiny"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "gallerySmallXBig",
+      "name": "Gallery - Small x Big",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "projects": {
+          "type": "Group",
+          "config": {
+            "label": "Projects",
+            "repeat": true,
+            "fields": {
+              "project": {
+                "type": "Link",
+                "config": {
+                  "label": "Project",
+                  "select": "document",
+                  "customtypes": ["project"]
+                }
+              },
+              "project_video": {
+                "type": "Select",
+                "config": {
+                  "label": "Project Video",
+                  "placeholder": "",
+                  "options": ["default", "alternative"],
+                  "default_value": "default"
+                }
+              }
+            }
+          }
+        },
+        "gutter": {
+          "type": "Select",
+          "config": {
+            "label": "Gutter",
+            "placeholder": "",
+            "options": ["tiny", "small"],
+            "default_value": "tiny"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "galleryBigXSmall",
+      "name": "Gallery - Big x Small",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "projects": {
+          "type": "Group",
+          "config": {
+            "label": "Projects",
+            "repeat": true,
+            "fields": {
+              "project": {
+                "type": "Link",
+                "config": {
+                  "label": "Project",
+                  "select": "document",
+                  "customtypes": ["project"]
+                }
+              },
+              "project_video": {
+                "type": "Select",
+                "config": {
+                  "label": "Project Video",
+                  "placeholder": "",
+                  "options": ["default", "alternative"],
+                  "default_value": "default"
+                }
+              }
+            }
+          }
+        },
+        "gutter": {
+          "type": "Select",
+          "config": {
+            "label": "Gutter",
+            "placeholder": "",
+            "options": ["tiny", "small"],
+            "default_value": "tiny"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "gallerySmallXBigXSmall",
+      "name": "Gallery - Small x Big x Small",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "projects": {
+          "type": "Group",
+          "config": {
+            "label": "Projects",
+            "repeat": true,
+            "fields": {
+              "project": {
+                "type": "Link",
+                "config": {
+                  "label": "Project",
+                  "select": "document",
+                  "customtypes": ["project"]
+                }
+              },
+              "project_video": {
+                "type": "Select",
+                "config": {
+                  "label": "Project Video",
+                  "placeholder": "",
+                  "options": ["default", "alternative"],
+                  "default_value": "default"
+                }
+              }
+            }
+          }
+        },
+        "gutter": {
+          "type": "Select",
+          "config": {
+            "label": "Gutter",
+            "placeholder": "",
+            "options": ["tiny", "small"],
+            "default_value": "tiny"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "galleryBigXSmallXBig",
+      "name": "Gallery - Big x Small x Big",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "projects": {
+          "type": "Group",
+          "config": {
+            "label": "Projects",
+            "repeat": true,
+            "fields": {
+              "project": {
+                "type": "Link",
+                "config": {
+                  "label": "Project",
+                  "select": "document",
+                  "customtypes": ["project"]
+                }
+              },
+              "project_video": {
+                "type": "Select",
+                "config": {
+                  "label": "Project Video",
+                  "placeholder": "",
+                  "options": ["default", "alternative"],
+                  "default_value": "default"
+                }
+              }
+            }
+          }
+        },
+        "gutter": {
+          "type": "Select",
+          "config": {
+            "label": "Gutter",
+            "placeholder": "",
+            "options": ["tiny", "small"],
+            "default_value": "tiny"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

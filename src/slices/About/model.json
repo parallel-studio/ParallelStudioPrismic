@@ -1,0 +1,116 @@
+{
+  "id": "about",
+  "type": "SharedSlice",
+  "name": "About",
+  "description": "About",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "contact_link_label": {
+          "type": "Text",
+          "config": {
+            "label": "Contact Link Label",
+            "placeholder": ""
+          }
+        },
+        "contact_link": {
+          "type": "Link",
+          "config": {
+            "label": "Contact Link",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "select": null
+          }
+        },
+        "contacts": {
+          "type": "Group",
+          "config": {
+            "label": "Contacts",
+            "repeat": true,
+            "fields": {
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Title",
+                  "placeholder": ""
+                }
+              },
+              "label": {
+                "type": "Text",
+                "config": {
+                  "label": "Label",
+                  "placeholder": ""
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "Link",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "select": null
+                }
+              }
+            }
+          }
+        },
+        "footer": {
+          "type": "Group",
+          "config": {
+            "label": "Footer",
+            "repeat": true,
+            "fields": {
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Text",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "Link",
+                  "placeholder": "",
+                  "select": null
+                }
+              },
+              "link_label": {
+                "type": "Text",
+                "config": {
+                  "label": "Link Label",
+                  "placeholder": ""
+                }
+              },
+              "color": {
+                "type": "Color",
+                "config": {
+                  "label": "Color",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

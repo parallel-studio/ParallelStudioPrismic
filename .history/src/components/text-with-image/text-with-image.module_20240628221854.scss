@@ -1,0 +1,21 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: grid;
+  column-gap: var(--px-small);
+  grid-template-areas: "left" "right";
+
+  > :first-child {
+    grid-area: left;
+    padding: var(--px-big);
+  }
+
+  > :last-child {
+    grid-area: right;
+  }
+}
+@include media.medium {
+}
+
+@include media.small {
+}

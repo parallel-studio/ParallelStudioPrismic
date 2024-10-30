@@ -1,0 +1,22 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: flex;
+  //   position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  gap: 2ch;
+  padding: 0;
+  font-size: 0.875em;
+  color: white;
+  background-color: black;
+  z-index: -1;
+  block-size: 500px;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

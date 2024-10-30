@@ -1,0 +1,13 @@
+@use "@/styles/_media.scss" as media;
+
+.main {
+  padding-inline: var(--px-small);
+  padding-block-end: var(--px-small);
+  background-color: white;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

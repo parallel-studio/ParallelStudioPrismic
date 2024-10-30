@@ -1,0 +1,17 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: grid;
+  column-gap: var(--px-small);
+  grid-template: auto / 1fr 1fr; // Update the grid-template-rows property to have two rows
+
+  > :first-child {
+    padding: var(--px-big);
+  }
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

@@ -1,0 +1,35 @@
+@use "@/styles/_media.scss" as media;
+
+.links_title {
+  font-size: x-small;
+}
+
+.dark {
+  .links_title {
+    color: #cecece;
+  }
+  a {
+    &:hover {
+      color: #cecece;
+    }
+  }
+}
+
+.light {
+  $color: #606060;
+
+  .links_title {
+    color: $color;
+  }
+  a {
+    &:hover {
+      color: $color;
+    }
+  }
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

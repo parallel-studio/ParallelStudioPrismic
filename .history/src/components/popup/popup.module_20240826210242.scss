@@ -1,0 +1,89 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+  opacity: 1;
+  background-color: hsla(0, 0%, 0%, 0.75);
+
+  &[data-closed] {
+    opacity: 0;
+    background-color: transparent;
+  }
+
+  &[data-entry] {
+    transition:
+      background-color 1s ease-out,
+      opacity 0.5s ease;
+  }
+}
+
+.transition {
+  transition:
+    background-color 1s ease-out,
+    opacity 0.5s ease;
+}
+
+.shown {
+  opacity: 1;
+  background-color: hsla(0, 0%, 0%, 0.75);
+}
+
+.hidden {
+  opacity: 0;
+  background-color: transparent;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background-color: hsla(0, 0%, 0%, 0.75);
+}
+
+.panel {
+  display: flex;
+  position: relative;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: black;
+  max-inline-size: 100svw;
+  max-block-size: 100svh;
+  color: white;
+}
+
+.title {
+  margin-block: 0 1rem;
+  max-inline-size: calc(100% - var(--px-medium));
+  font-size: 1.5rem;
+}
+
+.button {
+  $button_size: calc(var(--px-small) * 1.5);
+  position: absolute;
+  top: calc($button_size * 0.1);
+  right: calc($button_size * 0.15);
+
+  svg {
+    inline-size: $button_size;
+    block-size: $button_size;
+  }
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

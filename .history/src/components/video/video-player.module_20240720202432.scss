@@ -1,0 +1,92 @@
+@use "@/styles/_media.scss" as media;
+
+.video_container {
+  cursor: pointer;
+  overflow: hidden;
+  text-shadow: none;
+  position: relative;
+
+  mux-player {
+    --live-button: none;
+    --seek-backward-button: none;
+    --seek-forward-button: none;
+    --captions-button: none;
+    --airplay-button: none;
+    --pip-button: none;
+    --cast-button: none;
+    --playback-rate-button: none;
+    --time-display: none;
+    --duration-display: none;
+    --dialog: none;
+  }
+
+  &[data-contain="true"] {
+    mux-player {
+      --media-object-fit: contain !important;
+    }
+  }
+}
+
+.player {
+  inline-size: 100%;
+  block-size: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.popup_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.placeholder_image {
+  position: absolute;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.placeholder_hover_image {
+  filter: brightness(1.08) contrast(0.9);
+  transition: all 0.3s ease;
+  will-change: transform;
+}
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  width: max(50px, 4vw);
+  height: max(50px, 4vw);
+  color: white;
+}
+
+.full_screen_video {
+  inline-size: 100%;
+  block-size: 90svh;
+}
+
+.hover {
+  overflow: hidden;
+
+  mux-player {
+    --media-object-fit: cover;
+  }
+}
+
+.media_control_bar_visible {
+  opacity: 1;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .full_screen_video {
+    block-size: auto;
+    min-block-size: 60svh;
+  }
+}

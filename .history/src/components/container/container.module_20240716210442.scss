@@ -1,0 +1,46 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  display: flex;
+}
+
+.double_column {
+  > :nth-child(1) {
+    min-inline-size: 50svw;
+  }
+  > :nth-child(2) {
+    inline-size: 50%;
+  }
+}
+
+.screen_height {
+  // min-block-size: 80svh;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .wrapper {
+    flex-direction: column;
+
+    > *:not(:first-child):not(:last-child) {
+      margin-block-start: var(--px-small);
+    }
+  }
+
+  .screen_height {
+    min-block-size: auto;
+  }
+
+  .double_column {
+    > :nth-child(1) {
+      inline-size: auto;
+    }
+    > :nth-child(2) {
+      inline-size: auto;
+    }
+  }
+}

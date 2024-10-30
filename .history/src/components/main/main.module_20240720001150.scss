@@ -1,0 +1,15 @@
+@use "@/styles/_media.scss" as media;
+
+.main {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  padding-inline: var(--px-small);
+  padding-block-end: var(--px-small);
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

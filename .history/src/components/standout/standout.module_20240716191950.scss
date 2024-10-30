@@ -1,0 +1,16 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  position: fixed;
+  bottom: 0;
+  margin-inline-start: calc(-1 * var(--px-medium));
+  background-color: var(--primary-color);
+  inline-size: calc(100svw + var(--px-medium));
+  color: var(--theme-light-secondary-color);
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

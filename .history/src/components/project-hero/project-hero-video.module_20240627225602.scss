@@ -1,0 +1,12 @@
+@use "@/styles/_media.scss" as media;
+
+mux-player {
+  --seek-backward-button: none;
+  --seek-forward-button: none;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

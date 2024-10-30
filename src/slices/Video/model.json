@@ -1,0 +1,33 @@
+{
+  "id": "video",
+  "type": "SharedSlice",
+  "name": "Video",
+  "description": "Video",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "playback_id": {
+          "type": "Text",
+          "config": {
+            "label": "Playback Id",
+            "placeholder": ""
+          }
+        },
+        "placeholder_timestamp": {
+          "type": "Number",
+          "config": {
+            "label": "Placeholder Timestamp",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

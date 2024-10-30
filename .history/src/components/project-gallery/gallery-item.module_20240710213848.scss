@@ -1,0 +1,74 @@
+@use "@/styles/_media.scss" as media;
+
+$tagheight: calc(3.5 * var(--px-small));
+
+.item {
+  z-index: 1;
+  margin: 0;
+  block-size: 100%;
+  overflow: hidden;
+  list-style: none;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    gap: var(--px-tiny);
+    inline-size: 100%;
+    block-size: 100%;
+  }
+}
+
+.video_container {
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  inline-size: 100%;
+  block-size: 20svw;
+
+  video {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+
+  img {
+    display: block;
+    border: 0;
+    object-fit: cover;
+  }
+}
+
+.info {
+  display: flex;
+  margin: 0;
+  inline-size: 100%;
+  font-weight: 300;
+
+  h2 {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@include media.medium {
+}
+
+@include media.small {
+  .video_container {
+    block-size: 50svh;
+    overflow: hidden;
+
+    img {
+      position: relative !important;
+    }
+  }
+
+  .info {
+    h2 {
+      overflow: auto;
+      white-space: auto;
+    }
+  }
+}

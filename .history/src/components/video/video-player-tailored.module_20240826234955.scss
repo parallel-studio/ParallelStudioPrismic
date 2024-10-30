@@ -1,0 +1,16 @@
+@use "@/styles/_media.scss" as media;
+
+.controller {
+  block-size: 100%;
+  inline-size: 100%;
+  background-color: white;
+}
+
+.media_control_bar {
+  background-color: black;
+}
+@include media.medium {
+}
+
+@include media.small {
+}

@@ -1,0 +1,56 @@
+@use "@/styles/_media.scss" as media;
+
+$gap: calc(var(--px-small) / 6);
+
+.carousel {
+  position: relative;
+  block-size: 50svh;
+  overflow: hidden;
+}
+
+.carousel_wrapper {
+  display: flex;
+  display: relative;
+  block-size: 100%;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  > li:not(:last-child, :nth-last-of-type(2)) {
+    padding-inline-end: $gap;
+    background-color: white;
+  }
+
+  > li:nth-last-of-type(2) {
+    margin-right: calc($endsize + $gap);
+  }
+}
+
+$endsize: 300px;
+
+.end {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  inline-size: $endsize;
+  block-size: 100%;
+  font-weight: 500;
+  font-size: 1.65rem;
+  text-transform: uppercase;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

@@ -1,0 +1,32 @@
+:root {
+  --gallery-gap: 3px;
+
+  --primary-color: black;
+  --gray-color: #999999;
+  --gray-light-color: hsla(0, 0%, 96%, 1);
+
+  --font-color: var(--primary-color);
+
+  --theme-light-primary-color: black;
+  --theme-light-secondary-color: #606060;
+
+  --theme-dark-primary-color: white;
+  --theme-dark-secondary-color: #cecece;
+
+  --theme-placeholder-color: var(--gray-light-color);
+
+  --layout-max-width: 1920px;
+
+  --box-shadow: 0 0 20px 6px rgba(35, 46, 128, 0.15);
+  --border-radius: 0;
+
+  --px-base: 20px;
+
+  --px-big: calc(var(--px-base) * 4);
+  --px-medium: calc(var(--px-base) * 2);
+  --px-small: var(--px-base);
+  --px-tiny: calc(var(--px-base) / 3);
+
+  --block-height-base: max(325px, 20svw);
+  --transition-all: 0.3s all;
+}

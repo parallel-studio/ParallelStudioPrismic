@@ -1,0 +1,11 @@
+@use "@/styles/_media.scss" as media;
+
+.main {
+  padding-inline: var(--px-small);
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

@@ -1,0 +1,41 @@
+@use "@/styles/_media.scss" as media;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  > * {
+    max-inline-size: 75ch;
+  }
+}
+
+.hero {
+  min-block-size: max(350px, 15svw);
+
+  p a {
+    hyphens: auto;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.3em;
+
+    &:hover {
+      color: var(--theme-active-color);
+    }
+  }
+}
+
+.fullscreen {
+  min-block-size: calc(100svh - media.$headersize);
+  p {
+    margin: 0;
+    // line-height: 1;
+  }
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

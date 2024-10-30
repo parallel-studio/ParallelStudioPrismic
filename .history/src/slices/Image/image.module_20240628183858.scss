@@ -1,0 +1,17 @@
+@use "@/styles/_media.scss" as media;
+
+.gallery {
+  &:not(:last-child) {
+    margin-block-end: var(--px-small);
+  }
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+@include media.medium {
+}
+
+@include media.small {
+}

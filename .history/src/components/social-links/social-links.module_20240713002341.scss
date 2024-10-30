@@ -1,0 +1,47 @@
+@use "@/styles/_media.scss" as media;
+
+.links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    font-weight: 300;
+    font-size: 1.225rem;
+    line-height: 1.15;
+
+    &:hover {
+      transition: color 0.4s ease-in-out;
+      transition-delay: 0.1s;
+    }
+  }
+}
+
+.links_title {
+  font-size: x-small;
+}
+
+.dark {
+  .links_title {
+    color: var(--gray-color);
+  }
+  a {
+    &:hover {
+      color: var(--gray-color);
+    }
+  }
+}
+
+.light {
+}
+@include media.medium {
+}
+
+@include media.small {
+}

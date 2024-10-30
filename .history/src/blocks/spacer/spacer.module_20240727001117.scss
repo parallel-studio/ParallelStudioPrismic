@@ -1,0 +1,26 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  margin-top: var(--px-medium);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.small {
+  margin-top: var(--px-small);
+}
+
+.medium {
+  margin-top: var(--px-medium);
+}
+
+.big {
+  margin-top: var(--px-big);
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

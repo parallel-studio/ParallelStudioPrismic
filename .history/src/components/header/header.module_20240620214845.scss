@@ -1,0 +1,14 @@
+@use "@/styles/_media.scss" as media;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  inline-size: 100%;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

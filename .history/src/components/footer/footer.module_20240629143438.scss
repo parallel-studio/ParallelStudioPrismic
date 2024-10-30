@@ -1,0 +1,18 @@
+@use "@/styles/_media.scss" as media;
+
+.wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding: 0;
+  gap: 2ch;
+  font-size: 0.875em;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

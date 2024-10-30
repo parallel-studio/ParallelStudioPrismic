@@ -1,0 +1,15 @@
+@use "@/styles/_media.scss" as media;
+
+.main {
+  padding-inline: var(--px-small);
+  position: sticky;
+  bottom: 0;
+  z-index: 99;
+  padding-bottom: 500px;
+}
+
+@include media.medium {
+}
+
+@include media.small {
+}

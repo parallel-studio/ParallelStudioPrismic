@@ -1,0 +1,11 @@
+{
+  "libraries": ["./src/slices"],
+  "adapter": {
+    "resolve": "@slicemachine/adapter-next",
+    "options": {
+      "lazyLoadSlices": true
+    }
+  },
+  "repositoryName": "prismic-test-effe",
+  "localSliceSimulatorURL": "http://localhost:3000/slice-simulator"
+}
