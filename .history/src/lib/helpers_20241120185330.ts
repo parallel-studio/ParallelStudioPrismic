@@ -9,6 +9,7 @@ export const hasProjectData = (item: object): item is ProjectDocument => {
 };
 
 export const hasClientData = (item: object): item is ClientDocument => {
+  console.log(item?.data ? true : item);
   return (item as ClientDocument)?.data !== undefined;
 };
 

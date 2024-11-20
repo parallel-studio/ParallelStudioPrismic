@@ -15,11 +15,9 @@ export const ProjectGalleryItemServer: FC<GalleryItemProps> = async ({
 }) => {
   const { project, timestamp_start } = item;
 
-  if (
-    hasProjectData(project) &&
-    project.data.client &&
-    hasClientData(project.data.client)
-  ) {
+  console.log(project);
+
+  if (hasProjectData(project) && hasClientData(project.data.client)) {
     const { video, video_alternative } = project.data;
 
     const defaultVideo = await getMuxDataFromPrismic({
